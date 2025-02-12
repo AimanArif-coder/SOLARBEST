@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Free Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#checklist">Checklist</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About This Website</h2>
+        <p>This is a free website built using HTML, CSS, and JavaScript.</p>
+    </section>
+    
+    <section id="checklist">
+        <h2>Solar Maintenance Checklist</h2>
+        <form id="maintenance-form">
+            <label>Technician Name:</label>
+            <input type="text" name="technician" required><br>
+            
+            <label>Site Name:</label>
+            <input type="text" name="site" required><br>
+            
+            <label>Overall Inverter Condition:</label>
+            <select name="inverter-condition">
+                <option value="Good">Good</option>
+                <option value="Needs Maintenance">Needs Maintenance</option>
+                <option value="Faulty">Faulty</option>
+            </select><br>
+            
+            <label>Fault Description:</label>
+            <textarea name="fault-description"></textarea><br>
+            
+            <label>Attach Photos:</label>
+            <input type="file" name="photos" multiple><br>
+            
+            <button type="submit">Submit Checklist</button>
+        </form>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: example@example.com</p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
