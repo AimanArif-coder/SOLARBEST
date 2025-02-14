@@ -3,55 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Free Website</title>
+    <title>Solar Maintenance Checklist</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
+        <h1>Solar Maintenance Checklist</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
                 <li><a href="#checklist">Checklist</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="about">
-        <h2>About This Website</h2>
-        <p>This is a free website built using HTML, CSS, and JavaScript.</p>
-    </section>
-    
     <section id="checklist">
-        <h2>Solar Maintenance Checklist</h2>
+        <h2>Maintenance Form</h2>
         <form id="maintenance-form" action="mailto:marippp06@gmail.com" method="post" enctype="text/plain">
             
-            <label>Technician Name:</label>
-            <input type="text" name="technician" required><br>
+            <label>Select Company:</label><br>
+            <input type="radio" name="company" value="Atlantic Blue Sdn Bhd"> Atlantic Blue Sdn Bhd<br>
+            <input type="radio" name="company" value="Solarvest Energy Sdn Bhd"> Solarvest Energy Sdn Bhd<br>
+            <input type="radio" name="company" value="Powertrack Sdn Bhd"> Powertrack Sdn Bhd<br>
             
-            <label>Site Name:</label>
-            <input type="text" name="site" required><br>
+            <label>Customer/Site:</label>
+            <input type="text" name="customer-site" required><br>
             
-            <label>Overall Inverter Condition:</label>
-            <select name="inverter-condition">
-                <option value="Good">Good</option>
-                <option value="Needs Maintenance">Needs Maintenance</option>
-                <option value="Faulty">Faulty</option>
-            </select><br>
+            <label>System Type:</label>
+            <input type="text" name="system-type" required><br>
             
-            <label>Fault Description:</label>
-            <textarea name="fault-description"></textarea><br>
+            <label>Date & Time:</label>
+            <input type="datetime-local" name="date-time" required><br>
             
-            <label>Attach Photos:</label>
-            <input type="file" name="photos" multiple><br>
+            <label>Jobcall Number:</label>
+            <input type="text" name="jobcall-number" required><br>
+            
+            <label>Issues:</label>
+            <textarea name="issues" required></textarea><br>
             
             <button type="submit">Submit Checklist</button>
         </form>
     </section>
     
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2>Contact</h2>
         <p>Email: example@example.com</p>
     </section>
     
