@@ -1,38 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Free Website</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#checklist">Checklist</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About This Website</h2>
-        <p>This is a free website built using HTML, CSS, and JavaScript.</p>
-    </section>
-    
-    <section id="checklist">
-        <h2>Solar Maintenance Checklist</h2>
-        <iframe src="https://form.jotform.com/250422188672054" width="100%" height="600px" style="border:none;"></iframe>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: marippp06@gmail.com</p>
-    </section>
-    
-    <script src="script.js"></script>
-</body>
-</html>
+<section id="checklist">
+    <h2>Solar Maintenance Checklist</h2>
+    <form id="maintenance-form">
+        
+        <label>Technician Name:</label>
+        <input type="text" name="technician" required>
+        
+        <label>Site Name:</label>
+        <input type="text" name="site" required>
+
+        <label>Overall Inverter Condition:</label>
+        <select name="inverter-condition">
+            <option value="Good">Good</option>
+            <option value="Needs Maintenance">Needs Maintenance</option>
+            <option value="Faulty">Faulty</option>
+        </select>
+
+        <label>Inverter LED/Indicator Status:</label>
+        <select name="inverter-led">
+            <option value="Normal">Normal</option>
+            <option value="Warning">Warning</option>
+            <option value="Error">Error</option>
+        </select>
+
+        <label>Check External & Built-in DC Fuses:</label>
+        <select name="dc-fuse">
+            <option value="OK">OK</option>
+            <option value="Needs Replacement">Needs Replacement</option>
+        </select>
+
+        <label>Perform Thermal Scan on Terminations:</label>
+        <select name="thermal-scan">
+            <option value="Done">Done</option>
+            <option value="Not Done">Not Done</option>
+        </select>
+
+        <label>Fault Description (if any):</label>
+        <textarea name="fault-description"></textarea>
+
+        <label>Attach Photos:</label>
+        <input type="file" name="photos" multiple>
+
+        <button type="submit">Submit Checklist</button>
+    </form>
+</section>
